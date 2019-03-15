@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 all:
-	g++ -O3 --std=c++11 -Wall -Wextra -Ieigen-3.2.4 src/main_cb.cpp -o bin/cbandit
-	g++ -O3 --std=c++11 -Wall -Wextra -Ieigen-3.2.4 src/main_sm-eg.cpp -o bin/sebandit
+	g++ -O3 --std=c++11 -Wall -Wextra -Wno-misleading-indentation -Wno-deprecated-declarations -Wno-int-in-bool-context -Wno-ignored-attributes -Ieigen-3.2.4 src/main_cb.cpp -o bin/cbandit
+	g++ -O3 --std=c++11 -Wall -Wextra -Wno-misleading-indentation -Wno-deprecated-declarations -Wno-int-in-bool-context -Wno-ignored-attributes -Ieigen-3.2.4 src/main_sm-eg.cpp -o bin/sebandit
 clean:
 	rm -f bin/cbandit bin/sebandit data/cbandit_out.csv data/sm-eg-bandit_out.csv data/cb-vs-random.png data/sm-vs-eg-vs-random.png
 test:
