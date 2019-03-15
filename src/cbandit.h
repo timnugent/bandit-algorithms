@@ -64,9 +64,9 @@ public:
 	void update(VectorXd& x, double reward){
 		VectorXd context = x - average;
 		a_matrix[best_index] += context * context.transpose();
-	    if(reward != 0.0){
-	    	b_vector[best_index] += reward * context;
-	    }
+		if(reward != 0.0){
+			b_vector[best_index] += reward * context;
+		}
 		rewards[best_index] += reward;
 	}
 
