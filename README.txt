@@ -4,7 +4,7 @@ Tim Nugent 2015
 
 Upper confidence bound (UCB) contextual bandit with disjoint linear models - see algorithm 1 here (also in docs directory):
 
-http://www.research.rutgers.edu/~lihong/pub/Li10Contextual.pdf
+https://github.com/rohitkumar07/AI-Paper-Reviews/blob/master/Contextual%20Bandits/Li10Contextual.pdf
 
 Annealing softmax (Blotzmann Exploration) and annealing Epsilon-Greedy implementations:
 
